@@ -20,6 +20,6 @@ RUN set -ex \
     && yum clean all \
     && rm -rf /var/tmp/yum*
 
-COPY nginx/nginx.conf /etc/nginx/
+COPY nginx.conf /etc/nginx/
 
 CMD ["nginx", "-g", "daemon off;"]
