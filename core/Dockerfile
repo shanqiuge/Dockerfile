@@ -27,7 +27,7 @@ RUN set -ex \
     && rm -rf /var/cache/yum* \
     && rm -rf ~/.cache/pip
 
-COPY core/entrypoint.sh .
+COPY entrypoint.sh .
 RUN chmod 755 ./entrypoint.sh
 
 CMD ["./entrypoint.sh"]
