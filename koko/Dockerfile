@@ -18,7 +18,7 @@ RUN set -ex \
    && yum clean all \
    && rm -rf /var/cache/yum*
 
-COPY koko/entrypoint.sh .
+COPY entrypoint.sh .
 RUN chmod 755 ./entrypoint.sh
 
 CMD [ "./entrypoint.sh" ]
